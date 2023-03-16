@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Hexatex\LaravelMenu\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class MenuCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'menu';
 
     public $description = 'My command';
 
