@@ -11,7 +11,7 @@ use Hexatex\LaravelHashId\HasHashId;
  * Hexatex\LaravelMenu\Menu
  *
  * @property int $id
- * @property string $name
+ * @property string $display_name
  * @property string $code
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
@@ -34,7 +34,7 @@ class Menu extends Model
 
     /** @var array */
     protected $fillable = [
-        'name',
+        'display_name',
         'code',
     ];
 
