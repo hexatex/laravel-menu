@@ -2,10 +2,9 @@
 
 namespace Hexatex\LaravelMenu;
 
+use Hexatex\LaravelHashId\HasHashId;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Hexatex\LaravelHashId\HasHashId;
 
 /**
  * Hexatex\LaravelMenu\Menu
@@ -17,6 +16,7 @@ use Hexatex\LaravelHashId\HasHashId;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|MenuItem[] $menuItems
  * @property-read int|null $menuItems_count
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|\Hexatex\LaravelMenu\Menu byCode($code)
  * @method static \Illuminate\Database\Eloquent\Builder|\Hexatex\LaravelMenu\Menu newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\Hexatex\LaravelMenu\Menu newQuery()
@@ -26,6 +26,7 @@ use Hexatex\LaravelHashId\HasHashId;
  * @method static \Illuminate\Database\Eloquent\Builder|\Hexatex\LaravelMenu\Menu whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\Hexatex\LaravelMenu\Menu whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\Hexatex\LaravelMenu\Menu whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 class Menu extends Model
@@ -52,6 +53,7 @@ class Menu extends Model
      */
     /**
      * MenuItems
+     *
      * @return HasMany
      */
     public function menuItems()

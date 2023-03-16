@@ -2,9 +2,9 @@
 
 namespace Hexatex\LaravelMenu;
 
+use Hexatex\LaravelMenu\Commands\MenuCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Hexatex\LaravelMenu\Commands\MenuCommand;
 
 class MenuServiceProvider extends PackageServiceProvider
 {

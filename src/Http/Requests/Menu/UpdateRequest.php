@@ -25,7 +25,7 @@ class UpdateRequest extends FormRequest
     {
         return [
             'display_name' => ['string', 'max:191'],
-            'menuItems.*.menu_itemable_type' // Todo: need to allow projects using this package to say what types are allowed and what model/table to check if exists.
+            'menuItems.*.menu_itemable_type', // Todo: need to allow projects using this package to say what types are allowed and what model/table to check if exists.
 
             // TODO: !!! Need to change this to use hash id and not id
         ];

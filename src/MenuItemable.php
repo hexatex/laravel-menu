@@ -4,10 +4,11 @@ namespace Hexatex\LaravelMenu;
 
 interface MenuItemable
 {
-	/* Relationships */
-	/**
-	 * MenuItem
-	 * @return MorphOne
-	 */
-	public function MenuItem();
+    /* Relationships */
+    /**
+     * MenuItem
+     *
+     * @return MorphOne
+     */
+    public function MenuItem();
 }

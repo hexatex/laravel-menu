@@ -2,10 +2,8 @@
 
 namespace Hexatex\LaravelMenu;
 
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Hexatex\LaravelHashId\HasHashId;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 /**
@@ -18,9 +16,11 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read MenuItemable $MenuItemable
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|\Hexatex\LaravelMenu\Menu newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\Hexatex\LaravelMenu\Menu newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\Hexatex\LaravelMenu\Menu query()
+ *
  * @mixin \Eloquent
  */
 class MenuItem extends Model
@@ -37,6 +37,7 @@ class MenuItem extends Model
      */
     /**
      * MenuItemable
+     *
      * @return MorphTo
      */
     public function menuItemable()

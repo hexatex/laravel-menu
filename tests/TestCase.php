@@ -2,9 +2,9 @@
 
 namespace Hexatex\LaravelMenu\Tests;
 
+use Hexatex\LaravelMenu\MenuServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Hexatex\LaravelMenu\MenuServiceProvider;
 
 class TestCase extends Orchestra
 {
