@@ -1,0 +1,42 @@
+{
+    "name": "hexatex/laravel-menu",
+    "description": "Add the ability to manage menu and menu items.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cory Baumer",
+            "email": "cory.j.baumer@gmail.com",
+            "homepage": "https://github.com/hexatex"
+        }
+    ],
+    "homepage": "https://github.com/hexatex/laravel-menu",
+    "keywords": ["Laravel", "LaravelMenu"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hexatex\\LaravelMenu\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hexatex\\LaravelMenu\\Tests\\": "tests",
+            "Hexatex\\LaravelMenu\\Factories\\": "database/factories"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hexatex\\LaravelMenu\\LaravelMenuServiceProvider"
+            ],
+            "aliases": {
+                "LaravelMenu": "Hexatex\\LaravelMenu\\Facades\\LaravelMenu"
+            }
+        }
+    }
+}
